@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://shuijng.github.io/"/>
-  <updated>2020-07-17T09:01:54.392Z</updated>
+  <updated>2020-07-17T04:55:04.542Z</updated>
   <id>http://shuijng.github.io/</id>
   
   <author>
@@ -15,33 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>hexo summary</title>
-    <link href="http://shuijng.github.io/hexo%20summary/"/>
-    <id>http://shuijng.github.io/hexo%20summary/</id>
-    <published>2020-07-17T11:51:23.655Z</published>
-    <updated>2020-07-17T09:01:54.392Z</updated>
-    
-    <content type="html"><![CDATA[<p>#搭建GitHub&amp;HEXO博客</p><ul><li><p><strong>1安装git nodejs 测试安装效果</strong></p></li><li><blockquote><p>$ git –version<br>$ node -v<br>$ npm -v</p></blockquote></li><li><p><strong>2注册github创建仓库增</strong></p></li><li><p><strong>3安装hexo配置hexo测试安装效果</strong></p></li><li><blockquote><p>hexo -v</p></blockquote></li><li><p><strong>连接本地和github更换主题</strong></p></li></ul><p>##<br>#主要代码</p><ul><li>$ npm install hexo-cli -g</li><li>hexo init</li><li>npm install</li><li>hexo s等价于 hexo server #Hexo 会监视文件变动并自动更新，除修改站点配置文件外,无须重启服务器,直接刷新网页即可生效。</li></ul><p>hexo g 等价于 hexo generate #生成静态网页 (执行 $ hexo g后会在站点根目录下生成public文件夹, hexo会将”/blog/source/“ 下面的.md后缀的文件编译为.html后缀的文件,存放在”/blog/public/ “ 路径下)</p><p>hexo d 等价于 hexo deploy #将本地数据部署到远端服务器(如github)</p><p>hexo clean #清除缓存 ,网页正常情况下可以忽略此条命令,执行该指令后,会删掉站点根目录下的public文件夹</p><p>连接Github与本地</p><p>git config –global user.name “Name”<br>git config –global user.email “Email”<br>ssh-keygen -t rsa -C “Email”<br> clip &lt; ~/.ssh/id_rsa.pub</p><p>修改最后一行的配置：</p><h1 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h1><h2 id="Docs-https-hexo-io-docs-deployment-html"><a href="#Docs-https-hexo-io-docs-deployment-html" class="headerlink" title="Docs: https://hexo.io/docs/deployment.html"></a>Docs: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a></h2><p>deploy:<br>  type:<br>改为：</p><h1 id="Deployment-1"><a href="#Deployment-1" class="headerlink" title="Deployment"></a>Deployment</h1><h2 id="Docs-https-hexo-io-docs-deployment-html-1"><a href="#Docs-https-hexo-io-docs-deployment-html-1" class="headerlink" title="Docs: https://hexo.io/docs/deployment.html"></a>Docs: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a></h2><p>deploy:<br>  type: git<br>  repository: <a href="mailto:git@github.com">git@github.com</a>:panakot/panakot.github.io.git<br>  branch: master</p><p>ssh -T <a href="mailto:git@github.com">git@github.com</a></p><blockquote><p>用记事本打开博客根目录下的_config.yml文件，这是博客的配置文件，我们需要修改一下才能连接Github</p></blockquote><h1 id="Deployment-Docs-https-hexo-io-docs-deployment-html-deploy-type-git-repository-git-github-com-panakot-panakot-github-io-git-branch-master"><a href="#Deployment-Docs-https-hexo-io-docs-deployment-html-deploy-type-git-repository-git-github-com-panakot-panakot-github-io-git-branch-master" class="headerlink" title="Deployment ## Docs: https://hexo.io/docs/deployment.html deploy: type: git repository: git@github.com:panakot/panakot.github.io.git branch: master"></a>Deployment ## Docs: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a> deploy: type: git repository: <a href="mailto:git@github.com">git@github.com</a>:panakot/panakot.github.io.git branch: master</h1><p>$ git clone <a href="https://github.com/Huxpro/huxpro.github.io" target="_blank" rel="noopener">https://github.com/Huxpro/huxpro.github.io</a><br>下载完成后即可在 themes 目录下生成 hexo-theme-Bean-Tech 文件夹，然后打开 Hexo 文件夹下的配置文件 _config.yml ，找到关键字 theme，修改参数为：theme：hexo-theme-Bean-Tech （其他主题修改成相应名称即可），再次注意冒号后面有一个空格！</p><p>现在我们的主题已经替换完成，将它部署到我们的博客，博客根目录下右键 Git Bash Here，输入以下命令：</p><p>hexo clean<br>hexo g<br>hexo d</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;#搭建GitHub&amp;amp;HEXO博客&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;1安装git nodejs 测试安装效果&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;blockquote&gt;
-&lt;p&gt;$ git –version&lt;br&gt;$ node -v&lt;br&gt;$
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
   
   <entry>
     <title>1</title>
